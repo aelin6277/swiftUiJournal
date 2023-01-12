@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C358C7CC296F897A00471B8C /* swiftUIiJurnalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358C7CB296F897A00471B8C /* swiftUIiJurnalApp.swift */; };
+		C358C7CC296F897A00471B8C /* swiftUIiJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358C7CB296F897A00471B8C /* swiftUIiJournalApp.swift */; };
 		C358C7CE296F897A00471B8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358C7CD296F897A00471B8C /* ContentView.swift */; };
 		C358C7D0296F897D00471B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C358C7CF296F897D00471B8C /* Assets.xcassets */; };
 		C358C7D3296F897D00471B8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C358C7D2296F897D00471B8C /* Preview Assets.xcassets */; };
+		C358C7DA296F8C7600471B8C /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358C7D9296F8C7600471B8C /* JournalEntry.swift */; };
+		C358C7DC296F91FD00471B8C /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358C7DB296F91FD00471B8C /* Journal.swift */; };
+		C358C7DE296FAAC600471B8C /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358C7DD296FAAC600471B8C /* JournalEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C358C7C8296F897A00471B8C /* swiftUIiJurnal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIiJurnal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C358C7CB296F897A00471B8C /* swiftUIiJurnalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIiJurnalApp.swift; sourceTree = "<group>"; };
+		C358C7C8296F897A00471B8C /* swiftUIiJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIiJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C358C7CB296F897A00471B8C /* swiftUIiJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIiJournalApp.swift; sourceTree = "<group>"; };
 		C358C7CD296F897A00471B8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C358C7CF296F897D00471B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C358C7D2296F897D00471B8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C358C7D9296F8C7600471B8C /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		C358C7DB296F91FD00471B8C /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		C358C7DD296FAAC600471B8C /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +41,7 @@
 		C358C7BF296F897900471B8C = {
 			isa = PBXGroup;
 			children = (
-				C358C7CA296F897A00471B8C /* swiftUIiJurnal */,
+				C358C7CA296F897A00471B8C /* swiftUIiJournal */,
 				C358C7C9296F897A00471B8C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +49,23 @@
 		C358C7C9296F897A00471B8C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C358C7C8296F897A00471B8C /* swiftUIiJurnal.app */,
+				C358C7C8296F897A00471B8C /* swiftUIiJournal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C358C7CA296F897A00471B8C /* swiftUIiJurnal */ = {
+		C358C7CA296F897A00471B8C /* swiftUIiJournal */ = {
 			isa = PBXGroup;
 			children = (
-				C358C7CB296F897A00471B8C /* swiftUIiJurnalApp.swift */,
+				C358C7CB296F897A00471B8C /* swiftUIiJournalApp.swift */,
+				C358C7DD296FAAC600471B8C /* JournalEntryView.swift */,
 				C358C7CD296F897A00471B8C /* ContentView.swift */,
 				C358C7CF296F897D00471B8C /* Assets.xcassets */,
 				C358C7D1296F897D00471B8C /* Preview Content */,
+				C358C7D9296F8C7600471B8C /* JournalEntry.swift */,
+				C358C7DB296F91FD00471B8C /* Journal.swift */,
 			);
-			path = swiftUIiJurnal;
+			path = swiftUIiJournal;
 			sourceTree = "<group>";
 		};
 		C358C7D1296F897D00471B8C /* Preview Content */ = {
@@ -70,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C358C7C7296F897A00471B8C /* swiftUIiJurnal */ = {
+		C358C7C7296F897A00471B8C /* swiftUIiJournal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C358C7D6296F897E00471B8C /* Build configuration list for PBXNativeTarget "swiftUIiJurnal" */;
+			buildConfigurationList = C358C7D6296F897E00471B8C /* Build configuration list for PBXNativeTarget "swiftUIiJournal" */;
 			buildPhases = (
 				C358C7C4296F897A00471B8C /* Sources */,
 				C358C7C5296F897A00471B8C /* Frameworks */,
@@ -82,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = swiftUIiJurnal;
+			name = swiftUIiJournal;
 			productName = swiftUIiJurnal;
-			productReference = C358C7C8296F897A00471B8C /* swiftUIiJurnal.app */;
+			productReference = C358C7C8296F897A00471B8C /* swiftUIiJournal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C358C7C3296F897A00471B8C /* Build configuration list for PBXProject "swiftUIiJurnal" */;
+			buildConfigurationList = C358C7C3296F897A00471B8C /* Build configuration list for PBXProject "swiftUIiJournal" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C358C7C7296F897A00471B8C /* swiftUIiJurnal */,
+				C358C7C7296F897A00471B8C /* swiftUIiJournal */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C358C7DA296F8C7600471B8C /* JournalEntry.swift in Sources */,
+				C358C7DE296FAAC600471B8C /* JournalEntryView.swift in Sources */,
 				C358C7CE296F897A00471B8C /* ContentView.swift in Sources */,
-				C358C7CC296F897A00471B8C /* swiftUIiJurnalApp.swift in Sources */,
+				C358C7CC296F897A00471B8C /* swiftUIiJournalApp.swift in Sources */,
+				C358C7DC296F91FD00471B8C /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +278,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftUIiJurnal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"swiftUIiJournal/Preview Content\"";
 				DEVELOPMENT_TEAM = 7HR6796S47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftUIiJurnal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"swiftUIiJournal/Preview Content\"";
 				DEVELOPMENT_TEAM = 7HR6796S47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -320,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C358C7C3296F897A00471B8C /* Build configuration list for PBXProject "swiftUIiJurnal" */ = {
+		C358C7C3296F897A00471B8C /* Build configuration list for PBXProject "swiftUIiJournal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C358C7D4296F897E00471B8C /* Debug */,
@@ -329,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C358C7D6296F897E00471B8C /* Build configuration list for PBXNativeTarget "swiftUIiJurnal" */ = {
+		C358C7D6296F897E00471B8C /* Build configuration list for PBXNativeTarget "swiftUIiJournal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C358C7D7296F897E00471B8C /* Debug */,

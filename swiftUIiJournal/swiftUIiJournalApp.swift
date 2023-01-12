@@ -1,6 +1,6 @@
 //
-//  swiftUIiJurnalApp.swift
-//  swiftUIiJurnal
+//  swiftUIiJournalApp.swift
+//  swiftUIiJournal
 //
 //  Created by Elin A on 2023-01-12.
 //
