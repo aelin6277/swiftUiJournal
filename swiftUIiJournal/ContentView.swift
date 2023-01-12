@@ -13,18 +13,25 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             
-            List(journal.entries) { entry in
+            List() {
+            ForEach(journal.entries) { entry in
                 NavigationLink(destination: JournalEntryView(journal: journal, entry: entry) ){
                     RowView(entry: entry)
                     
                 }
             }
-            
+            .onDelete() { indexSet in //ondelete fungerar bara om man skriver Foreach ovan! i list!
+                delete(indexSet: indexSet)
+                }
+            }
             .navigationBarTitle("Journal")
             .navigationBarItems(trailing: NavigationLink(destination: JournalEntryView(journal: journal)) {
                 Image(systemName: "plus.square") //Nu får jag en knapp med + i en fyrkant som tar en till en ny sida där det står Journalmed automatiskt en tillbaka-knapp!Med NavigationView ovanför
             })
         }
+    }
+    func delete(indexSet: IndexSet) {
+        journal.entries.remove(atOffsets: indexSet)
     }
 }
 
